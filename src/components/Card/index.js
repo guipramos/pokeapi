@@ -1,9 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, Text, ImageBackground, Image} from 'react-native';
+import {View, StyleSheet, Text, ImageBackground, Image, TextInput} from 'react-native';
 import {CardInitial} from '../CardInitial/CardInitial';  
-import { GestureHandlerRootView, TextInput } from 'react-native-gesture-handler';
 import { Filter } from '../Filter/Filter';
-import { BottomSheet } from '../BottomSheet/BottomSheet';
 
 export function Card(){
 	return (
@@ -21,11 +19,6 @@ export function Card(){
 				/>
 				<CardInitial />
 			</View>
-			<GestureHandlerRootView style={{ flex: 1}}>
-				<View>
-					<BottomSheet />
-				</View>
-			</GestureHandlerRootView>
 		</View>
   	);
 }
